@@ -1,0 +1,156 @@
+.widget-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.widget-title {
+  color: black;
+  font-family: 'Avenir Heavy';
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.widget-help {
+  margin-left: auto;
+}
+
+.input-label {
+  color: #4A4A4A;
+  font-size: 14px;
+  font-family: 'Avenir Next';
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-node {
+  padding-top: 1em;
+}
+
+.form-input {
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 0;
+  height: 30px;
+  min-width: 330px;
+}
+
+.input-text-color {
+  min-width: 290px;
+  padding-left: 4px;
+}
+
+.input-number {
+  padding-left: 4px;
+}
+
+.color-preview {
+  box-shadow: inset rgb(0 0 0 / 11%) 0 0 0 1px;
+  height: 30px;
+  width: 40px;
+  cursor: pointer;
+}
+
+#label-color-preview {
+  background: #000000;
+}
+
+#label-halo-color-preview {
+  background: #d3d3d3;
+}
+
+.jimu-btn:disabled {
+  background-color: rgb(234, 234, 234);
+  color:#4A4A4A;
+  border-color: #d3d3d3;
+}
+
+/* Radio buttons styled as buttons */
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  padding: 8px;
+  border: 1px solid rgb(234, 234, 234);
+  background-color: white;
+  cursor: pointer;
+  display: inline;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  line-height: 40px;
+  color:black;
+  font-size: 14px;
+  font-family: 'Avenir Next';
+}
+input[type="radio"]:checked + label {
+  padding: 8px;
+  border: 1px solid black;
+  background-color: rgb(234, 234, 234);
+  font-weight: bolder;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin-left: 136px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #196fa6;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #196fa6;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
