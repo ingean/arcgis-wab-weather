@@ -1,5 +1,5 @@
-# arcgis-wab-widget
-Template for writing widgets for ArcGIS Web AppBuilder
+# arcgis-wab-weather
+Widget for showing weather forecasts from Yr.no for current map extent
 
 #### Install widget
 The widget needs to be hosted on a web server and registered as an item in ArcGIS Enterprise.
